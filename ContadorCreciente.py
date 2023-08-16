@@ -7,14 +7,15 @@ def aumentar_contador():
 
 ventana = Tk()
 ventana.title('Contador Creciente')
+ventana.resizable(width=False, height=False)
 
-texto = Label(ventana, text='Contador')
-texto.pack()
+texto = Label(ventana, text='Contador', font=16)
+texto.pack(pady=8, ipady=8, padx=10, ipadx=10)
 
-contador_numero = Label(ventana, text='80')
-contador_numero.pack()
+contador_numero = Label(ventana, text='80', font=16)
+contador_numero.pack(pady=8, ipady=8, padx=10, ipadx=10)
 
-boton_aumentar = Button(ventana, text='Aumentar (+)', command=aumentar_contador)
-boton_aumentar.pack()
+boton_aumentar = Button(ventana, text='Aumentar (+)', command=aumentar_contador, font=16)
+boton_aumentar.pack(pady=8, ipady=8, padx=10, ipadx=10)
 
 ventana.mainloop()

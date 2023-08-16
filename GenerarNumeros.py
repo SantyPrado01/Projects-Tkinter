@@ -1,5 +1,6 @@
 from tkinter import *
 import random
+
 def generar_numero():
     numero_uno=numero_seleccionado_uno.get()
     numero_dos=numero_seleccionado_dos.get()
